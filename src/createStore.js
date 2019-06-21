@@ -11,10 +11,7 @@ function getState(){
   return state;
 }
 dispatch({type:'@@INIT'})
-return {
-dispatch,
-  getState
-}
+
 }
 
 function render() {
