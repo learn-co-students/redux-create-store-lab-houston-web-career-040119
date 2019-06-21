@@ -9,7 +9,7 @@ export default function createStore(reducer) {
   }
 
   function getState() {
-    return !!state ? state : reducer(undefined, {type: 'lol'})
+    return reducer(state, {type: 'lol'})
   }
 
   return {
