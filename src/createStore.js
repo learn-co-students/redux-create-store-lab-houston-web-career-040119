@@ -10,7 +10,13 @@ function dispatch(action)
 function getState(){
   return state;
 }
+
 dispatch({type:'@@INIT'})
+
+return {
+dispatch,
+  getState
+}
 
 }
 
